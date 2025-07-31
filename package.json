@@ -1,8 +1,9 @@
 {
   "name": "order-summary-component",
   "version": "1.0.0",
-  "description": "## GitHub Pages",
+  "description": "Order summary component",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
