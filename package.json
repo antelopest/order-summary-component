@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build"
+    "deploy": "vite build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/antelopest/order-summary-component/issues"
   },
-  "homepage": "https://github.com/antelopest/order-summary-component#readme"
+  "homepage": "https://github.com/antelopest/order-summary-component#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.6",
+    "vite": "^7.0.6"
+  }
 }
