@@ -1,14 +1,59 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order Summary Component</title>
-</head>
-<body>
 
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./src/assets/images/favicon/favicon-32x32.png" />
 
-</body>
+    <link rel="stylesheet" href="./src/main.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="order-summary">
+        <div class="order-summary__image">
+          <img
+            src="./src/assets/images/icons/illustration-hero.svg"
+            alt="The dancing hero" />
+        </div>
+        <div class="order-summary__content">
+          <h2 class="order-summary__title">Order Summary</h2>
+          <p class="order-summary__description">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="order-summary__plan">
+            <div class="order-summary__plan-icon">
+              <img
+                src="./src/assets/images/icons/icon-music.svg"
+                alt="Music icon" />
+            </div>
+            <div class="order-summary__plan-info">
+              <h3 class="order-summary__plan-title">Annual Plan</h3>
+              <div class="order-summary__plan-price">$59.99/year</div>
+            </div>
+            <button
+              type="button"
+              class="order-summary__button order-summary__button--change">
+              Change
+            </button>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="order-summary__button order-summary__button--payment">
+          Proceed to Payment
+        </button>
+        <button
+          type="button"
+          class="order-summary__button order-summary__button--cancel">
+          Cancel Order
+        </button>
+      </section>
+    </main>
+  </body>
 </html>
