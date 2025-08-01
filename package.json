@@ -8,7 +8,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "vite build && gh-pages -d dist",
+    "lint": "eslint . --ext .js",
+    "lint:style": "stylelint '**/*.css'",
+    "format": "prettier --write .",
+    "lint:html": "htmlhint src/**/*.html"
   },
   "repository": {
     "type": "git",
@@ -23,8 +27,15 @@
   "homepage": "https://github.com/antelopest/order-summary-component#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
     "gh-pages": "^6.3.0",
+    "htmlhint": "^1.6.3",
     "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.23.0",
+    "stylelint-config-standard": "^39.0.0",
     "vite": "^7.0.6"
   }
 }
