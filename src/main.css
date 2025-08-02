@@ -28,7 +28,7 @@
   --order-summary-border-radius: 16px;
   --order-summary-gap: 24px;
   --order-summary-margin: 32px 16px;
-  --order-summary-padding: 16px;
+  --order-summary-plan-padding: 16px 0;
 }
 
 * {
@@ -134,7 +134,7 @@
 .order-summary__plan {
   display: grid;
   width: 100%;
-  padding: 16px 0;
+  padding: var(--order-summary-plan-padding);
   grid-template-columns: 25% 40% 35%;
   background-color: var(--color-blue-50);
   border-radius: var(--order-summary-border-radius);
@@ -171,7 +171,7 @@
 
 .order-summary__button--payment,
 .order-summary__button--cancel {
-  padding: 16px 0;
+  padding: var(--order-summary-plan-padding);
   font-size: var(--font-size);
   font-weight: var(--font-weight-700);
 }
